@@ -1,0 +1,73 @@
+.banner-section {
+  height: 80vh;
+  background-image: url("../../assets/bannerdark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 901;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 60rem;
+  text-align: center;
+  z-index: 902;
+}
+.title h1 {
+  letter-spacing: -0.5px;
+  font-size: 6.2rem;
+  font-weight: 100;
+  font-family: "Kaushan Script", cursive;
+  color: #FFF;
+}
+.title h1::after {
+  content: "";
+  width: 20rem;
+  height: 0.2rem;
+  margin: 0.5rem auto;
+  background-color: #ffffff;
+  display: block;
+}
+.title p {
+  font-size: 3.2rem;
+  font-family: "Dancing Script", cursive;
+  color: #ffffff;
+}
+
+.row-divider {
+  top: auto;
+  bottom: 0;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.row-divider::after {
+  content: "";
+  bottom: -5px;
+  display: block;
+  background: linear-gradient(45deg, transparent 33.333%, #ecf4fc 33.333%, #ecf4fc 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #ecf4fc 33.333%, #ecf4fc 66.667%, transparent 66.667%);
+  background-repeat: repeat-x;
+  background-size: 16px 32px;
+  height: 8px;
+}
+
+.center-box {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 95%;
+  height: auto;
+  max-width: 1024px;
+  min-height: 200px;
+  margin-bottom: 12px;
+  padding: 57px 50px 45px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=style.css.map */

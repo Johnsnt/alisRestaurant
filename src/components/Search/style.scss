@@ -1,0 +1,24 @@
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+
+    img {
+        position: absolute;
+        left: .7rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: .1rem solid #CE9933;
+        border-radius: 5rem;
+    }
+
+    input[type='text'] {
+        padding-left: 35px;
+    }
+}

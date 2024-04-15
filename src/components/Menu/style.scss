@@ -1,0 +1,41 @@
+.menu-section {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-image: url('../../assets/menubanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    z-index: 900;
+
+    > h3 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 11rem;
+        font-family: "Kaushan Script", cursive;
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: #274253;
+    }
+
+    .card-container {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        top: 17rem;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1120px;
+        width: 100%;
+        min-height: 700px;
+        height: auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        box-shadow: 1px 21px 30px #858585;
+    }
+}

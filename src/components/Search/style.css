@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+}
+.search img {
+  position: absolute;
+  left: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+}
+.search input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid #CE9933;
+  border-radius: 5rem;
+}
+.search input[type=text] {
+  padding-left: 35px;
+}/*# sourceMappingURL=style.css.map */
