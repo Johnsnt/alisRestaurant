@@ -2,7 +2,7 @@ import './style.css';
 import Category from '../Category/';
 import Search from '../Search/';
 
-export default function Banner() {
+export default function Banner( {entradas, massas, carnes, bebidas, saladas, sobremesas, typedText, handleSearchItem}) {
 return (
     <section className='banner-section'>
         <div className='title'>
@@ -11,15 +11,20 @@ return (
         </div>
         <div className='row-divider'></div>
         <div className='center-box'>
-            <Category
-                // entradas={() => handleFilterCategory("Entradas")}
-                // massas={() => handleFilterCategory("Massas")}
+            <Search typedText2={typedText} handleSearchItem2={handleSearchItem} />
+            <Category 
+            entradas={entradas}
+            massas={massas}
+            carnes={carnes}
+            bebidas={bebidas}
+            saladas={saladas}
+            sobremesas={sobremesas}
+
                 // carnes={() => handleFilterCategory("Carnes")}
                 // bebidas={() => handleFilterCategory("Bebidas")}
                 // saladas={() => handleFilterCategory("Saladas")}
                 // sobremesas={() => handleFilterCategory("Sobremesas")}
             />
-            <Search />
         </div>
     </section>
 );

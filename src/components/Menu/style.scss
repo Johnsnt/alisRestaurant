@@ -1,6 +1,6 @@
 .menu-section {
-    min-height: 100vh;
-    height: auto;
+    min-height: 110vh;
+    height: 100%;
     width: 100%;
     background-image: url('../../assets/menubanner.jpg');
     background-repeat: no-repeat;
@@ -32,10 +32,10 @@
         transform: translateX(-50%);
         max-width: 1120px;
         width: 100%;
-        min-height: 700px;
-        height: auto;
-        padding: 2rem;
+        min-height: 70rem;
+        height:auto;
+        padding: 1rem;
         background-color: #ffffff;
-        box-shadow: 1px 21px 30px #858585;
+        box-shadow: 1px 21px 30px #727272;
     }
 }

@@ -11,11 +11,11 @@ const filterCategory = (category) => {
 const filterEntry = filterCategory("Entradas");
 
 const searchItem = (typedText) => {
-    if (typedText.length > 3) {
+    if (typedText.length >= 3) {
         return (
             products.filter((item) => {
                 item.description.toLowerCase().replace(/\s/g, "").includes(typedText.toLowerCase()) ||
-                    item.name.toLowerCase().replace(/\s/g, "").includes(typedText.toLowerCase());
+                item.name.toLowerCase().replace(/\s/g, "").includes(typedText.toLowerCase());
             })
         );
     } else {
@@ -23,4 +23,4 @@ const searchItem = (typedText) => {
     }
 };
 
-export { returnProductList, filterCategory, searchItem };
+export { returnProductList, filterCategory, searchItem, filterEntry };

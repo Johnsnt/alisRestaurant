@@ -1,13 +1,12 @@
 import './style.css';
-import { products } from '../../data/products';
 import Card from '../Cardmenu/';
 
-export default function Menu() {
+export default function Menu({categoryItems}) {
     return (
         <section className='menu-section'>
             <h3>Cardápio</h3>
             <div className='card-container'>
-                {products.map((item) => (
+                {categoryItems.map((item) => (
                     <Card
                         key={item.id}
                         image={item.image}

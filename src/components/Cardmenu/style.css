@@ -3,11 +3,12 @@
   flex-direction: column;
   flex-grow: 1;
   min-height: 35rem;
-  width: 25rem;
+  width: 27rem;
   border-radius: 1rem;
   box-shadow: 1px 3px 5px #cccccc;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
+  background-color: #fff;
 }
 .card-box figure img {
   width: 100%;
