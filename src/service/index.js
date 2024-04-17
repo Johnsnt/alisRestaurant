@@ -20,7 +20,7 @@ const searchItem = (typedText) => {
         )
     } else {
         return filterCategory("Entradas");
-    }
+    } 
 };
 
 export { returnProductList, filterCategory, searchItem, filterEntry };

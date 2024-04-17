@@ -33,8 +33,8 @@ button {
   touch-action: manipulation;
 }
 button:hover {
-  background-color: #CE9933;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 button:focus {
   outline: 2px solid transparent;
@@ -45,8 +45,8 @@ button:focus-visible {
 }
 
 .on {
-  background-color: #CE9933;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .off {

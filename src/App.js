@@ -12,18 +12,16 @@ function App() {
 
   const handleFilterCategory = (category) => {
     setCategory(filterCategory(category));
-    setClickButton(category)
+    setClickButton(category);
     setTypedText("");
-    console.log(clickButton)
+    console.log(clickButton);
   };
 
   const handleSearchItem = (text) => {
     setTypedText(text);
     setCategory(searchItem(text));
-    setClickButton("")
+    setClickButton("");
   };
-
-
 
   return (
     <>
@@ -41,7 +39,6 @@ function App() {
       />
       <Menu categoryItems={category} />
     </>
-
 
   );
 }

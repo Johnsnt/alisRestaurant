@@ -32,8 +32,8 @@ button {
     touch-action: manipulation;
 
     &:hover {
-        background-color: #CE9933;
-        color: #fff;
+        background-color: var(--secondary);
+        color: var(--white);
     }
 
     &:focus {
@@ -47,8 +47,8 @@ outline-offset: 2px;
 }
 
 .on {
-    background-color: #CE9933;
-    color: #fff;
+    background-color: var(--secondary);
+    color: var(--white);
 }
 
 .off {
