@@ -1,21 +1,26 @@
 import './App.css';
 import { useState } from 'react';
-import { returnProductList, filterCategory, filterEntry, searchItem } from './service/index.js';
+import { filterCategory, filterEntry, searchItem } from './service/index.js';
 import Banner from './components/Banner';
 import Menu from './components/Menu';
 
 function App() {
   const [category, setCategory] = useState(filterEntry);
   const [typedText, setTypedText] = useState("");
+  const [clickButton, setClickButton] = useState("Entradas");
+
 
   const handleFilterCategory = (category) => {
     setCategory(filterCategory(category));
-    console.log('botão apertado');
+    setClickButton(category)
+    setTypedText("");
+    console.log(clickButton)
   };
 
   const handleSearchItem = (text) => {
     setTypedText(text);
-    console.log(text);
+    setCategory(searchItem(text));
+    setClickButton("")
   };
 
 
@@ -29,6 +34,7 @@ function App() {
         bebidas={() => handleFilterCategory("Bebidas")}
         saladas={() => handleFilterCategory("Saladas")}
         sobremesas={() => handleFilterCategory("Sobremesas")}
+        clickButton={clickButton}
 
         typedText={typedText}
         handleSearchItem={((e) => handleSearchItem(e.target.value))}

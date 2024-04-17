@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
     position: relative;
     z-index: 901;
 }
@@ -75,4 +74,56 @@
     transform: translateX(-50%);
     background-color: #fff;
     box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, .3);
+}
+
+@import './animation';
+
+@media screen and (max-width:765px) {
+
+    .banner-section {
+        height: 65vh;
+    }
+
+    .title {
+        width: 40rem;
+        transform: translate(-50%, -80%);
+
+        h1 {
+            font-size: 5.2rem;
+        }
+
+        p {
+            font-size: 2.4rem;
+            font-family: 'Dancing Script', cursive;
+            color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
+    .center-box {
+        height: 150px;
+        padding: .6rem 1rem;
+    }
+
+    .title {
+        transform: translate(-50%, -60%);
+    }
+}
+
+@media screen and (max-width:401px) {
+    .banner-section {
+        height: 50rem;
+    }
+    .title {
+        transform: translate(-50%, -60%);
+        width: 30rem;
+
+        h1 {
+            font-size: 4.2rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
 }

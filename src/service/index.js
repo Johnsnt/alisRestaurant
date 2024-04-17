@@ -11,15 +11,15 @@ const filterCategory = (category) => {
 const filterEntry = filterCategory("Entradas");
 
 const searchItem = (typedText) => {
-    if (typedText.length >= 3) {
+    if (typedText.length >= 2) {
         return (
-            products.filter((item) => {
-                item.description.toLowerCase().replace(/\s/g, "").includes(typedText.toLowerCase()) ||
-                item.name.toLowerCase().replace(/\s/g, "").includes(typedText.toLowerCase());
-            })
-        );
+            products.filter((item) => 
+                item.description.toLowerCase().includes(typedText.toLowerCase()) ||
+                item.name.toLowerCase().includes(typedText.toLowerCase())
+            )
+        )
     } else {
-        return products;
+        return filterCategory("Entradas");
     }
 };
 
