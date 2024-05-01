@@ -24,6 +24,14 @@ jobs:
       run: npm install 
     - name: rodando testes que não existem
       run: npm run test
-
     - name: Print Hello World
       run: echo "Hello World"
+
+#Já deu pra perceber
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Outro job pra testar
+      run: | 
+        echo "Outro job"
+        echo "Jobs em multiplas linhas"
