@@ -1,3 +1,4 @@
+import { FaCartPlus } from 'react-icons/fa';
 import './style.css';
 
 export default function Card({id, image, name, category, description, price}) {
@@ -14,6 +15,8 @@ export default function Card({id, image, name, category, description, price}) {
         <div className='card-box-price'>
             <span>{new Intl.NumberFormat("pt-br", {style: "currency", currency: "BRL"}).format(price)}</span>
         </div>
+        <FaCartPlus className='cart'/>
+
     </div>
     )
 }
