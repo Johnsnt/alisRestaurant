@@ -5,18 +5,25 @@ name: Test Workflow CI
 on: [push]
 
 jobs:
-  build:
+  TesteCiNaMao:
     runs-on: ubuntu-latest
 
     steps:
+      #checa repositório
     - name: Checkout repository
       uses: actions/checkout@v2
+      #Roda um comando
     - name: Using Node.js
       uses: actions/setup-node@v2
+      #com a versão 16
       with: 
           node-version: 16.
+
+      #instala o node em varias linhas
     - name: instalando o node
-      run: npm installasd
+      run: | 
+      npm install,
+      npm run test
 
     - name: Print Hello World
       run: echo "Hello World"
