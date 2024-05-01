@@ -21,9 +21,9 @@ jobs:
 
       #instala o node em varias linhas
     - name: instalando o node
-      run: | 
-      npm install,
-      npm run test
+      run: npm install 
+    - name: rodando testes que não existem
+      run: npm run test
 
     - name: Print Hello World
       run: echo "Hello World"
