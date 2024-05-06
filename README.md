@@ -12,4 +12,4 @@ Projeto desenvolvido usando React com intuito de praticar minhas habilidades.
 - React JS: biblioteca JavaScript para construção de interfaces de usuário.
 - HTML5: linguagem de marcação para estruturar o conteúdo da aplicação.
 - CSS3: linguagem de estilo para estilizar a interface do usuário.
-- SCSS: Linguagem de estilização com base CSS. 
+- SCSS: Pré-processador CSS. 
