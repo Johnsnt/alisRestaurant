@@ -1,4 +1,4 @@
-# Projeto Ali's Restaurant
+# Ali's Restaurant
 
 Projeto desenvolvido usando React com intuito de praticar minhas habilidades. 
 
